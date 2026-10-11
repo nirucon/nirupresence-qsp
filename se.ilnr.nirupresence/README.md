@@ -1,6 +1,6 @@
 # NIRUPRESENCE QuickShell
 
-Personal Omarchy/QuickShell companion for n.rudolfsson.net. Version 0.4.4.
+Personal Omarchy/QuickShell companion for n.rudolfsson.net. Version 0.4.5.
 
 Install: `sh install.sh` from the repository root. This keeps local settings, backs up existing plugin files and requests a shell plugin rescan.
 

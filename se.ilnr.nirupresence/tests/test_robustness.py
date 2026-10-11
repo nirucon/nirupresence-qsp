@@ -1,7 +1,7 @@
 import importlib.util,json,multiprocessing,os,tempfile,unittest
 from pathlib import Path
 from unittest.mock import patch
-p=Path(__file__).resolve().parents[1]/'versions/0.4.4/nirupresence.py'
+p=Path(__file__).resolve().parents[1]/'versions/0.4.5/nirupresence.py'
 spec=importlib.util.spec_from_file_location('presence',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 def writer(root,index):
  m.STATE_DIR=Path(root);m.STATE=m.STATE_DIR/'state.json'

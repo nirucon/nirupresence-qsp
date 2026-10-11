@@ -1,7 +1,7 @@
 import importlib.util, unittest
 from unittest.mock import patch
 from pathlib import Path
-p=Path(__file__).resolve().parents[1]/"versions/0.4.4/nirupresence.py"
+p=Path(__file__).resolve().parents[1]/"versions/0.4.5/nirupresence.py"
 spec=importlib.util.spec_from_file_location("nirupresence_qs",p)
 mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
 class ModeTests(unittest.TestCase):

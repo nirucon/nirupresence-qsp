@@ -12,7 +12,7 @@ for name,digest in checks.items():
  p=bundle/path
  if p.is_symlink() or hashlib.sha256(p.read_bytes()).hexdigest()!=digest:raise SystemExit('Package checksum mismatch: '+name)
 manifest=json.loads((src/'manifest.json').read_text())
-if manifest.get('id')!='se.ilnr.nirupresence' or manifest.get('version')!='0.4.4':raise SystemExit('Unexpected manifest')
+if manifest.get('id')!='se.ilnr.nirupresence' or manifest.get('version')!='0.4.5':raise SystemExit('Unexpected manifest')
 for ancestor in [dest,*dest.parents]:
  if ancestor==home:break
  if ancestor.is_symlink():raise SystemExit('Symlink installation path refused')
@@ -20,9 +20,9 @@ dest.parent.mkdir(parents=True,exist_ok=True)
 safety=home/'.local/state/nirupresence/package-backups'/time.strftime('%Y-%m-%d_%H%M%S')
 if safety.exists():raise SystemExit('Safety path already exists; retry in a second')
 with tempfile.TemporaryDirectory(prefix='.nirupresence-stage-',dir=dest.parent) as t:
- stage=pathlib.Path(t)/'package';shutil.copytree(src,stage)
+ stage=pathlib.Path(t)/'package';shutil.copytree(src,stage,ignore=shutil.ignore_patterns("__pycache__","*.pyc"))
  dest.mkdir(exist_ok=True)
- for relative in ['versions/0.4.4','tests','README.md','VALIDATION.md','manifest.json']:
+ for relative in ['versions/0.4.5','tests','README.md','VALIDATION.md','manifest.json']:
   p=stage/relative;target=dest/relative
   if any(a.is_symlink() for a in [target,*target.parents] if a!=home):raise SystemExit('Symlink target refused')
   if target.exists():
@@ -37,7 +37,7 @@ with tempfile.TemporaryDirectory(prefix='.nirupresence-stage-',dir=dest.parent) 
       out=target/f.relative_to(p);out.parent.mkdir(parents=True,exist_ok=True);os.replace(f,out)
    else:target.parent.mkdir(parents=True,exist_ok=True);os.replace(p,target)
   else:os.replace(p,target)
-print('Installed NIRUPRESENCE 0.4.4; rollback files:',safety)
+print('Installed NIRUPRESENCE 0.4.5; rollback files:',safety)
 r=subprocess.run(['omarchy-shell','shell','rescanPlugins'],capture_output=True,text=True)
 if r.returncode:print('Automatic shell rescan unavailable; run: omarchy-shell shell rescanPlugins')
 else:print('Shell plugins rescanned.')

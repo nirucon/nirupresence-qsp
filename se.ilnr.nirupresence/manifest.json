@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "se.ilnr.nirupresence",
   "name": "NIRUPRESENCE",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "author": "Nicklas Rudolfsson",
   "license": "MIT",
   "description": "Presence companion för n.rudolfsson.net: status, daily-driver, Now Playing och Microlog.",
@@ -10,7 +10,7 @@
     "bar-widget"
   ],
   "entryPoints": {
-    "barWidget": "versions/0.4.4/BarWidget.qml"
+    "barWidget": "versions/0.4.5/BarWidget.qml"
   },
   "barWidget": {
     "displayName": "NIRUPRESENCE",

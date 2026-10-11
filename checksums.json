@@ -1,14 +1,20 @@
 {
-  "install.sh": "da60a6ae5c10d468fc7a5c7d2e523e3cf111069d9ec5e35f63f27c36a5aaa6eb",
-  "se.ilnr.nirupresence/README.md": "456a12a4c259f9077d25fe6ceffd61be5b349fbb0083606c35518aec92c18b47",
-  "se.ilnr.nirupresence/VALIDATION.md": "2eb68156e8333a75b22e7b2ebed5e21752248a569fa272a093f59e55bb519a3a",
-  "se.ilnr.nirupresence/manifest.json": "3be6e181f5e5c1cf21ae3ff231bedef8eaf44e463ff6604fa1c210a4d0dcc65f",
-  "se.ilnr.nirupresence/tests/test_modes.py": "2163b3517fca85730830bd7eb3e362d97152139a67a33f3812d434a7771be9b7",
-  "se.ilnr.nirupresence/tests/test_robustness.py": "18d057867f03b1ffa4aaa05c3a293ffc240ac4f88a7ee964e4c242d71e5746b7",
+  ".gitignore": "9ed9785298a83ce28a7c22a60cf75f08c8bfc51913f85793b4d6d5da0015da23",
+  "README.md": "ad682826fbd14d4c192afa2f3ad189f1b0db9d9d21445f3a39b3575ee87e9f23",
+  "install.sh": "84f87e1a759d03f3622b268aad3619b8ecfac4b401097dc83d7f82c078a5a899",
+  "se.ilnr.nirupresence/README.md": "336b5fc128f392b0e53ba0ad6ee74efb70c12810d1bd7b807950ef43bd30b066",
+  "se.ilnr.nirupresence/VALIDATION.md": "88a08c0aabf9274233e24a80bb524841a5c1e7040c9abb851d6986f3795be6c2",
+  "se.ilnr.nirupresence/manifest.json": "3afff68720b2d2d8a971e478145439b27bfe1a42ae5eecc3155374fbbc65eecd",
+  "se.ilnr.nirupresence/tests/test_modes.py": "109a29dbe6e85827f0f9494e62af4d142842901433a3bc78581dcfe6ae91a851",
+  "se.ilnr.nirupresence/tests/test_release.py": "7e90aa5335f2bf9da6811cee8704a40008ccc676c2f7d0bf3873ac9e69e50078",
+  "se.ilnr.nirupresence/tests/test_robustness.py": "3e4367f07ba502ef2dbfecec7deb5273903fee5b0ad581063ff1d1a29435f0bb",
   "se.ilnr.nirupresence/versions/0.4.3/BarWidget.qml": "e4cb0333cad05ac96dee8894a6ce31a7fab2859ca23868866c806c7f5fa12ef0",
   "se.ilnr.nirupresence/versions/0.4.3/Panel.qml": "8ca20da017a99fd5466bc693ac041da6aa296e6cc9bbe251a9d64958b241e35c",
   "se.ilnr.nirupresence/versions/0.4.3/nirupresence.py": "895fd1a66ca7c8f29618db0ab8352f1176992742b9d9741f05e6cdacacb2385a",
   "se.ilnr.nirupresence/versions/0.4.4/BarWidget.qml": "e4cb0333cad05ac96dee8894a6ce31a7fab2859ca23868866c806c7f5fa12ef0",
   "se.ilnr.nirupresence/versions/0.4.4/Panel.qml": "be47b9e38f7ce62088d13bb21604c974a308038ee7743f63a12078363138d69a",
-  "se.ilnr.nirupresence/versions/0.4.4/nirupresence.py": "895fd1a66ca7c8f29618db0ab8352f1176992742b9d9741f05e6cdacacb2385a"
+  "se.ilnr.nirupresence/versions/0.4.4/nirupresence.py": "895fd1a66ca7c8f29618db0ab8352f1176992742b9d9741f05e6cdacacb2385a",
+  "se.ilnr.nirupresence/versions/0.4.5/BarWidget.qml": "e4cb0333cad05ac96dee8894a6ce31a7fab2859ca23868866c806c7f5fa12ef0",
+  "se.ilnr.nirupresence/versions/0.4.5/Panel.qml": "be47b9e38f7ce62088d13bb21604c974a308038ee7743f63a12078363138d69a",
+  "se.ilnr.nirupresence/versions/0.4.5/nirupresence.py": "ab43625513529ff1f01eb5f0e5cfd6fe5258473e5510f23bf5672c72569eab09"
 }
